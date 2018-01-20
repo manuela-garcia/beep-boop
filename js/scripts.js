@@ -1,7 +1,11 @@
-var beepBoop = function(number) {
-  return false;
-  console.log(beepBoop);
-};
+var newArray = [];
+
+for (var index = 0; index = inputtedNumber; index ++) {
+  return inputtedNumber ++;
+}
+
+
+
 
 
 
@@ -15,10 +19,8 @@ var beepBoop = function(number) {
 $(document).ready(function(){
   $("#input-number").submit(function(event) {
     event.preventDefault();
-    var number = $("input#number").val();
-    var returnNumbers = beepBoop(number);
-    $("#return-numbers").text(returnNumbers);
-    console.log();
+    var inputtedNumber = parseInt($("input#number").val());
+    $("#return-numbers").append("<li>" + returnNumbers + "</li>");
   });
 
 
